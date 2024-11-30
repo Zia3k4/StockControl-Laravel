@@ -1,4 +1,4 @@
-# Documentação do Projeto: Controle de Estoque
+# Projeto: Controle de Estoque
 Visão Geral
 Nome do Projeto: Controle de Estoque
 Tecnologias Utilizadas:
@@ -48,12 +48,12 @@ Configure o arquivo .env para o seu banco de dados MySQL:
 
 ### plaintext
 Copiar código
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=nome_do_banco
-DB_USERNAME=seu_usuario
-DB_PASSWORD=sua_senha
+DB_CONNECTION=mysql<br>
+DB_HOST=127.0.0.1<br>
+DB_PORT=3306<br>
+DB_DATABASE=nome_do_banco<br>
+DB_USERNAME=seu_usuario<br>
+DB_PASSWORD=sua_senha<br>
 Execute as migrations para criar as tabelas no banco de dados:
 
 ### bash
