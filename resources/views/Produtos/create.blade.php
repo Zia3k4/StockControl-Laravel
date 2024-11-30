@@ -9,8 +9,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item">
-                <a href="{{route('dashboard')}}">Home</a></li>
-              <li class="breadcrumb-item active">Create</li>
+                <a href="{{route('dashboard')}}">Produto</a></li>
+              <li class="breadcrumb-item active">Criar</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -27,13 +27,17 @@
                 <h5 class="card-title">Crie novo Produto</h5><br>
 
                 <!-- form start -->
-              <form role="form" action="{{route('Produtos.store')}}">
+              <form role="form" action="{{route('Produtos.store')}}" method="post">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="codigodoproduto">Id do Produto</label>
-                    <input type="text" id=codigo class="form-control" placeholder="ID do Produto" name="codigo" required >
+                    <input type="text" id=codigo class="form-control" placeholder="Produto" name="name" required>
+                    <span class="text-danger">{{ $errors->first('name')}} </span>
+                    @if($errors ->has('name'))
+                    @endif
                 </div>
+              
                   <!--CRIAR O ID DO CODIGO NOS OUTROS ARQUIVO >
 
                 <-- /.card-body -->

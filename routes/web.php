@@ -28,7 +28,7 @@ Route::post('/buscar-produto', [ProdutosController::class, 'buscarProduto'])->na
 //index
 Route::get('/produtos/index', [ProdutosController::class, 'index'])->name('produtos.index');
 //store obs, depois mudar o nome da referencia dp Produto.store para produtos.store
-Route::post('/produtos', [ProdutosController::class, 'store'])->name('Produtos.store');
+Route::get('/produtos', [ProdutosController::class, 'store'])->name('Produtos.store');
 
 //  APAGAR OS COMENTATRIOS DEPOIS
 

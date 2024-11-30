@@ -5,3 +5,6 @@
 <!-- AdminLTE App -->
 <script src="{{asset('admin/dist/js/adminlte.min.js')}}"></script>
 @stack('scripts')
+<script>
+$('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+</script>

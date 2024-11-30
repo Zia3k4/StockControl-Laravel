@@ -271,7 +271,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -330,16 +330,16 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-file-upload-button {
   font: inherit;
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -2083,7 +2083,7 @@ input[type="date"].form-control,
 input[type="time"].form-control,
 input[type="datetime-local"].form-control,
 input[type="month"].form-control {
-  -webkit-appearance: none;
+  appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
@@ -3988,7 +3988,7 @@ input[type="button"].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-  -webkit-appearance: none;
+  appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
@@ -4116,7 +4116,7 @@ input[type="button"].btn-block {
   height: 1rem;
   padding: 0;
   background-color: transparent;
-  -webkit-appearance: none;
+  appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
@@ -4151,7 +4151,7 @@ input[type="button"].btn-block {
   box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
 }
 
@@ -11508,6 +11508,7 @@ body:not(.layout-fixed).layout-navbar-fixed.text-sm .wrapper .main-sidebar .side
   position: fixed;
   right: 0;
   z-index: 1032;
+  /* antes a position era fixed/
 }
 
 .layout-footer-not-fixed .wrapper .main-footer {
@@ -53009,4 +53010,4 @@ a.text-muted:hover {
 .dark-mode .border-dark {
   border-color: #4b545c !important;
 }
-/*# sourceMappingURL=adminlte.css.map */
+/*# sourceMappingURL=adminlte.css.map */}
